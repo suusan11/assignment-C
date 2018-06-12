@@ -114,6 +114,8 @@ void main (void) {
 	   //Last current - NULL
 	   	current->next = NULL;
 
+		free(current);
+
 	   	//Create Edge
 	   	for(i = 0; i < e; i++) {
 	   		//Create area of edge and add value
@@ -142,7 +144,8 @@ void main (void) {
 	   			pe->next = edgecurrent;
 	   		}
 	   	}
-
+		free(edgecurrent);
+				
 //	   	showNodes(head);
 
 
